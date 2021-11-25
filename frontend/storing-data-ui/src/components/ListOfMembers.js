@@ -15,7 +15,7 @@ class ListOfMemebers extends Component{
 	}
 
 	componentDidMount(){
-		axios.get("http://localhost:8080/member")
+		axios.get("http://172.31.23.84:8080/member")
 		.then(response => {
 			console.log(response);
 			this.setState({members:response.data});

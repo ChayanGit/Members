@@ -8,7 +8,7 @@ import axios from 'axios';
 class AMember extends Component{
 
 	deleteHandler = () =>{
-		let requesetString = "http://localhost:8080/member/delete/" + this.props.id;
+		let requesetString = "http://172.31.23.84:8080/member/delete/" + this.props.id;
 		axios.get(requesetString)
 		.then(response =>{
 			
