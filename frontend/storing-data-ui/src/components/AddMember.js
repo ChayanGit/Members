@@ -145,7 +145,7 @@ class AddMember extends Component {
 		if(this.isPass()){
 			let toSend = this.seperateObjectsFromState();
 
-			if(this.state.id == undefined){                            // if edit is not purpose
+			if(this.state.id === undefined){                            // if edit is not purpose
 				axios.post("http://localhost:8080/member", toSend)
 					.then(response => {
 						console.log(response)
