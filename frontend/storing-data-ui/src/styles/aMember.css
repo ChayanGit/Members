@@ -1,0 +1,19 @@
+.aMember{
+	width: 80%;
+	display: inline-flex;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 25px;
+	margin: 0px;
+	text-align: left;
+	align-self: left;
+}
+
+.aMember:hover{
+	background-color: #2FC4E9;
+}
+
+.aMember span{
+	margin-left: 40px;
+	color: #F3F5F9;
+}
