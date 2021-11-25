@@ -27,7 +27,7 @@ class AddMember extends Component {
 
 	componentDidMount(){  
 		if(this.state.id !== undefined){
-			let requestString = "http://172.31.23.84:8080/member/single/" + this.props.location.id;
+			let requestString = "http://3.23.97.223:8080/member/single/" + this.props.location.id;
 			axios.get(requestString)
 				.then(
 					response => {
@@ -146,7 +146,7 @@ class AddMember extends Component {
 			let toSend = this.seperateObjectsFromState();
 
 			if(this.state.id === undefined){                            // if edit is not purpose
-				axios.post("http://172.31.23.84:8080/member", toSend)
+				axios.post("http://3.23.97.223:8080/member", toSend)
 					.then(response => {
 						console.log(response)
 					})
@@ -157,7 +157,7 @@ class AddMember extends Component {
 						renderMain: true
 					})
 			}else{                                                      // if edit is the purpose
-				axios.post("http://localhost:8080/member/single", toSend)
+				axios.post("http://3.23.97.223:8080/member/single", toSend)
 					.then(response => {
 						console.log(response)
 					})
